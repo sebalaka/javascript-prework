@@ -2,7 +2,7 @@ let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.
 let playerMove = getMoveName(playerInput);
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 let computerMove = getMoveName(randomNumber);
-
+let score = displayResult(playerMove, computerMove);
 // printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to ' + playerMove + ', to wygrywasz!');
 //
 // console.log('Wylosowana liczba to: ' + randomNumber);
@@ -33,7 +33,7 @@ let computerMove = getMoveName(randomNumber);
 //
 // printMessage('Twój ruch to: ' + playerMove);
 
-let score = displayResult(playerMove, computerMove);
+
 // if( computerMove == 'kamień' && playerMove == 'papier'){
 //   printMessage('Ty wygrywasz!');
 // } else if (computerMove == 'kamień' && playerMove == 'nożyce') {
