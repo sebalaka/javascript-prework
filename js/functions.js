@@ -46,3 +46,12 @@ function displayResult(argComputerMove, argPlayerMove) {
     printMessage('Nie wpisałeś liczby 1, 2 lub 3');
   }
 }
+
+function playGame(playerInput){
+  clearMessages(); 
+  // let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+  let playerMove = getMoveName(playerInput);
+  let randomNumber = Math.floor(Math.random() * 3 + 1);
+  let computerMove = getMoveName(randomNumber);
+  let score = displayResult(playerMove, computerMove);
+}
