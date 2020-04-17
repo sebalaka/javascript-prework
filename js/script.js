@@ -1,6 +1,16 @@
-playGame(3);
+// playGame(3);
 
+let rockButton = document.getElementById('play-rock');
 
+rockButton.addEventListener('click', rockClicked);
+
+let paperButton = document.getElementById('play-paper');
+
+paperButton.addEventListener('click', paperClicked);
+
+let scissorsButton = document.getElementById('play-scissors');
+
+scissorsButton.addEventListener('click', scissorsClicked);
 
 
 // printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to ' + playerMove + ', to wygrywasz!');
@@ -15,7 +25,7 @@ playGame(3);
 //   computerMove = "nożyce"
 // }
 // */
-printMessage('Mój ruch to: ' + computerMove);
+// printMessage('Mój ruch to: ' + ComputerMove);
 //
 //
 //
