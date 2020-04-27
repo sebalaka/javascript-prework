@@ -49,11 +49,10 @@ function displayResult(argComputerMove, argPlayerMove) {
 
 function playGame(playerInput){
   clearMessages();
-  // let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
-  let playerMove = getMoveName(playerInput);
+  const playerMove = getMoveName(playerInput);
   let randomNumber = Math.floor(Math.random() * 3 + 1);
-  let computerMove = getMoveName(randomNumber);
-  let score = displayResult(playerMove, computerMove);
+  const computerMove = getMoveName(randomNumber);
+  displayResult(playerMove, computerMove);
 }
 
 function rockClicked(){
